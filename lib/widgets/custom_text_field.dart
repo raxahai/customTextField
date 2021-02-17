@@ -94,7 +94,10 @@ class CustomTextFieldWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  prefixIcon,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8.0),
+                    child: prefixIcon,
+                  ),
                   SizedBox(
                     height: 25,
                     child: VerticalDivider(
